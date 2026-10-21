@@ -53,7 +53,7 @@ $$
 设动画播放速度为 `f` FPS、状态帧数为 `N`，在经过 `t` 秒后：
 
 $$
- k(t)=\lfloor tf\rfloor\bmod N
+ k(t)=\lfloor tf\rfloor\pmod{N}
 $$
 
 示例：空闲状态 `N=6`，若设定 `f=8` FPS，则完整循环时长：
@@ -69,13 +69,13 @@ $$
 角色坐标为 `(x_p,y_p)`，目标位置为 `(x_t,y_t)`：
 
 $$
-\theta=\operatorname{atan2}(y_t-y_p,\ x_t-x_p)
+\theta=\mathrm{atan2}(y_t-y_p,\ x_t-x_p)
 $$
 
 当使用离散朝向帧时，可以将角度量化到最近的方向索引：
 
 $$
- d=\operatorname{round}\left(\frac{M\theta}{2\pi}\right)\bmod M
+ d=\mathrm{round}\left(\frac{M\theta}{2\pi}\right)\pmod{M}
 $$
 
 其中 `M` 是可用方向数量。实际朝向索引与图集列的对应关系，应根据 `pet_request.json` 的方向定义映射，不能直接假定 0° 对应某一固定列。
