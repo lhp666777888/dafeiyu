@@ -1,0 +1,10 @@
+{
+  "id": "pet_6ad87fde0f7081918bbf2a5af3585ae1",
+  "name": "大肥鱼",
+  "description": "蓝发蓝眼、鲸鱼围裙的可爱女仆伙伴，参考 Cayhaze/deepseek-pet。",
+  "is_custom": true,
+  "is_active": true,
+  "verified_active_pet_id": "pet_6ad87fde0f7081918bbf2a5af3585ae1",
+  "source_repository": "https://github.com/Cayhaze/deepseek-pet",
+  "atlas_sha256": "e681562aa4f4e2a54bc8c5f801017cb5e2de61a84e110d6406884459a442e83b"
+}
